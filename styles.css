@@ -1,0 +1,315 @@
+/* --- Estilos para la Barra de Navegación Fija --- */
+.navbar {
+    background-color: var(--text-dark); /* Fondo oscuro para contraste */
+    color: white;
+    padding: 10px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Hace que la barra se quede en la parte superior */
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-brand {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95em;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color); /* Resaltado al pasar el ratón */
+}
+
+/* Estilo para el botón de Proyección dentro de la barra */
+.nav-button {
+    background-color: var(--button-bg);
+    padding: 5px 10px !important; /* Usamos !important para anular el padding anterior */
+    border-radius: 4px;
+}
+
+.nav-button:hover {
+    background-color: var(--button-hover-bg);
+    color: white !important;
+}
+
+/* Ajuste del cuerpo para el espacio de la barra fija */
+body {
+    padding-top: 50px; /* Agrega un espacio en la parte superior igual a la altura de la barra de navegación */
+    /* ... el resto de los estilos del body ... */
+}
+/* Variables para colores */
+:root {
+    --primary-color: #007bff; /* Azul vibrante para acentos */
+    --secondary-color: #6c757d; /* Gris para texto secundario */
+    --background-light: #f8f9fa; /* Fondo muy claro */
+    --text-dark: #343a40; /* Texto principal oscuro */
+    --border-light: #e9ecef; /* Borde sutil */
+    --button-bg: #28a745; /* Verde para el botón */
+    --button-hover-bg: #218838;
+    --section-bg-opacity: 0.95; /* Opacidad para el fondo de las secciones sobre la imagen de fondo */
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    
+    /* --- INICIO: ESTILOS PARA IMAGEN DE FONDO --- */
+    background-image: url('img/fondo.jpg'); /* ¡Asegúrate de tener esta imagen en tu carpeta! */
+    background-size: cover; /* Cubre todo el área sin distorsionar */
+    background-attachment: fixed; /* La imagen de fondo se mantiene fija al hacer scroll */
+    background-position: center center; /* Centra la imagen */
+    /* --- FIN: ESTILOS PARA IMAGEN DE FONDO --- */
+    
+    background-color: #ffffff; /* Color de respaldo si la imagen no carga */
+}
+
+/* Encabezado Principal */
+.hero-section {
+    background-color: rgba(var(--primary-color-rgb), var(--section-bg-opacity)); /* Usamos rgba para la opacidad */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de Imagen de Carrito */
+.image-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(248, 249, 250, var(--section-bg-opacity)); /* Fondo claro con opacidad */
+}
+
+.main-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones de Contenido */
+.content-section {
+    padding: 40px 15%; /* Relleno con márgenes laterales grandes para simular diapositiva */
+    margin: 0 auto;
+    max-width: 1200px;
+    border-bottom: 1px solid var(--border-light);
+    background-color: rgba(255, 255, 255, var(--section-bg-opacity)); /* Fondo blanco con opacidad */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra sutil para las secciones */
+    margin-bottom: 20px; /* Espacio entre secciones */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.content-section h3 {
+    color: var(--secondary-color);
+    margin-top: 30px;
+}
+
+/* Listas */
+.content-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.content-section li {
+    margin-bottom: 10px;
+}
+
+.exclusion-note {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 15px;
+    margin-top: 20px;
+    color: #856404;
+}
+
+/* Sección gris para Usuario/Aplicación */
+.grey-bg {
+    background-color: rgba(248, 249, 250, var(--section-bg-opacity)); /* Fondo claro con opacidad */
+}
+
+.application-details {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+}
+
+.application-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Imágenes dentro de las secciones */
+.image-section {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgba(240, 240, 240, 0.8); /* Fondo ligero para la sección de imagen con opacidad */
+    border-radius: 8px;
+}
+
+.section-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+}
+
+.image-caption {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+/* Diagrama ER */
+.diagram-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Documentación de Tablas */
+.table-documentation {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, var(--section-bg-opacity)); /* Fondo blanco con opacidad */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.table-documentation h3 {
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid var(--border-light);
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--background-light);
+}
+
+/* Sección del botón "Ir a la Proyección" */
+.next-page-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(var(--primary-color-rgb), var(--section-bg-opacity)); /* Fondo primario con opacidad */
+    color: white;
+}
+
+.next-page-section h2 {
+    color: white;
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.next-page-button {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.next-page-button:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-2px); /* Pequeño efecto al pasar el mouse */
+}
+
+
+/* Pie de Página */
+footer {
+    background-color: var(--text-dark);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+}
+
+/* Agregamos una variable para el color primario en RGB para usar con rgba() */
+body {
+    --primary-color-rgb: 0, 123, 255; /* RGB de #007bff */
+}
+/* --- Estilos para el Iframe del Diagrama ER --- */
+
+.diagram-iframe-container {
+    position: relative;
+    padding-bottom: 60%; /* Relación de aspecto 16:10. Ajusta este porcentaje si tu diagrama es más alto o más ancho. */
+    height: 0;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.diagram-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Ocultamos el estilo de imagen anterior, ya no se usa */
+.diagram-image {
+    display: none; 
+}

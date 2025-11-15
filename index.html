@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis E-commerce: Presentación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+        <div class="nav-brand">Análisis E-commerce</div>
+        <ul class="nav-links">
+            <li><a href="#objetivo">🎯 Objetivo</a></li>
+            <li><a href="#alcance">✨ Alcance</a></li>
+            <li><a href="#usuario-aplicacion">👥 Aplicación</a></li>
+            <li><a href="#diagrama">📉 Diagrama ER</a></li>
+            <li><a href="#documentacion-tablas">📖 Tablas</a></li>
+            <li><a href="proyeccion.html" class="nav-button">Ir a Proyección</a></li>
+        </ul>
+    </nav>
+    <header class="hero-section">
+        <h1>Análisis de Compras y Proyección de Nuevos Usuarios en la Tienda E-commerce</h1>
+        <p class="subtitle">Evaluación estratégica de rendimiento y expansión digital</p>
+        <p class="author">Autor: Manuel Triviño | Entrega para: CoderHouse</p>
+    </header>
+    
+    <div class="image-container">
+        <img src="img/service.jpg"" alt="Ilustración de tienda e-commerce con carrito de compras" class="main-image">
+    </div>
+
+    <section id="objetivo" class="content-section">
+        <h2>🎯 Objetivo del Proyecto</h2>
+        <p>Analizar los patrones de compra de los clientes actuales en la tienda e-commerce y proyectar el crecimiento en registros de usuarios, mediante métricas de conversión y comportamiento digital, con el fin de optimizar estrategias de captación y fidelización en un periodo de 8 semanas.</p>
+
+        <h3>Metodología SMART:</h3>
+        <ul>
+            <li><strong>Específico:</strong> Estudiar la relación entre compras y registros.</li>
+            <li><strong>Medible:</strong> Indicadores como tasa de conversión, frecuencia de compra y evolución mensual de registros.</li>
+            <li><strong>Alcanzable:</strong> Uso de datos históricos y herramientas analíticas disponibles.</li>
+            <li><strong>Relevante:</strong> Mejora de captación, personalización y retención.</li>
+            <li><strong>Temporal:</strong> Análisis en 8 semanas, proyección a 6 meses.</li>
+        </ul>
+        <div class="image-section">
+            <img src="img/imagen-ecommerce.png" alt="Gráfico de análisis de datos de e-commerce" class="section-image">
+           <!-- <p class="image-caption">Representación de métricas de análisis.</p> -->
+        </div>
+    </section>
+
+    <section id="alcance" class="content-section">
+        <h2>✨ Alcance del Análisis</h2>
+        <ul class="alcance-list">
+            <li>Análisis de datos de compra.</li>
+            <li>Identificación de puntos de conversión y su impacto en registros.</li>
+            <li>Segmentación de usuarios por comportamiento.</li>
+            <li>Proyección de crecimiento en registros bajo escenarios optimizados.</li>
+            <li>Recomendaciones estratégicas para marketing y UX.</li>
+        </ul>
+        <div class="exclusion-note">
+            <strong>Excluye:</strong> aspectos logísticos, atención postventa y análisis financiero externo.
+        </div>
+    </section>
+    
+    <section id="usuario-aplicacion" class="content-section grey-bg">
+        <h2>👥 Usuario Final y Nivel de Aplicación</h2>
+        <div class="application-details">
+            <div>
+                <h3>Usuario Final:</h3>
+                <ul>
+                    <li>Equipos de marketing digital</li>
+                    <li>Analistas de negocio</li>
+                    <li>Responsables de producto</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Nivel de Aplicación:</h3>
+                <ul>
+                    <li><strong>Estratégico:</strong> Definición de campañas, planificación de recursos.</li>
+                    <li><strong>Táctico:</strong> Optimización de puntos de conversión, ajustes en UX/UI y segmentación de audiencias.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="img/analisis-grafico.jpg" alt="Iconos representando diferentes tipos de usuarios" class="section-image">
+            <!-- <p class="image-caption">Roles clave que se beneficiarán del análisis.</p> -->
+        </div>
+    </section>
+
+   <section id="diagrama" class="content-section">
+        <h2>📉 Diagrama Entidad-Relación (ER)</h2>
+        <p>A continuación se muestra el diagrama de entidad-relación detallado de la base de datos:</p>
+        
+        <div class="diagram-iframe-container">
+            <iframe 
+                src="DataAnalytics-ecommecec.drawio.html" 
+                title="Diagrama de Entidad-Relación del E-commerce"
+                allowfullscreen="true">
+            </iframe>
+        </div>
+        </section>
+
+    <section id="documentacion-tablas" class="content-section">
+    <h2>📖 Documentación de Tablas Clave</h2>
+    
+    <div class="table-documentation">
+        <h3>Tabla: Usuario</h3>
+        <p>Usuarios que se registran en la tienda e-commerce.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>UsuarioID</td><td>Identificador único del usuario.</td><td>PK</td></tr>
+                <tr><td>Nombre</td><td>Nombre del usuario.</td><td></td></tr>
+                <tr><td>Apellido</td><td>Apellido del usuario.</td><td></td></tr>
+                <tr><td>Email</td><td>Correo electrónico.</td><td></td></tr>
+                <tr><td>Contraseña</td><td>Contraseña hasheada del usuario.</td><td></td></tr>
+                <tr><td>FechaRegistro</td><td>Fecha en que el usuario se registró.</td><td></td></tr>
+                <tr><td>FechaNacimiento</td><td>Fecha de nacimiento del usuario.</td><td></td></tr>
+                <tr><td>Pais</td><td>País de residencia.</td><td></td></tr>
+                <tr><td>Provincia</td><td>Provincia de residencia.</td><td></td></tr>
+                <tr><td>Ciudad</td><td>Ciudad de residencia.</td><td></td></tr>
+                <tr><td>CodigoPostal</td><td>Código postal.</td><td></td></tr>
+                <tr><td>Genero</td><td>Género del usuario.</td><td></td></tr>
+                <tr><td>Telefono</td><td>Número de teléfono.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: Categoria</h3>
+        <p>Categoriza todos los productos de la tienda.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>CategoriaID</td><td>Identificador único de la categoría.</td><td>PK</td></tr>
+                <tr><td>NombreCategoria</td><td>Nombre de la categoría.</td><td></td></tr>
+                <tr><td>Descripcion</td><td>Descripción detallada de la categoría.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: Producto</h3>
+        <p>Registro de todos los productos de la tienda. Conectado con la tabla Categoria.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>ProduncoID</td><td>Identificador único del producto.</td><td>PK</td></tr>
+                <tr><td>Nombre</td><td>Nombre del producto.</td><td></td></tr>
+                <tr><td>Descripcion</td><td>Descripción detallada del producto.</td><td></td></tr>
+                <tr><td>Precio</td><td>Precio de venta del producto.</td><td></td></tr>
+                <tr><td>Stock</td><td>Cantidad disponible en inventario.</td><td></td></tr>
+                <tr><td>Marca</td><td>Marca del producto.</td><td></td></tr>
+                <tr><td>Peso</td><td>Peso del producto.</td><td></td></tr>
+                <tr><td>Dimensiones</td><td>Dimensiones del producto.</td><td></td></tr>
+                <tr><td>FechaCreacion</td><td>Fecha de registro del producto.</td><td></td></tr>
+                <tr><td>Estado</td><td>Estado actual del producto (Activo/Inactivo).</td><td></td></tr>
+                <tr><td>CategoriaID</td><td>Categoría a la que pertenece el producto.</td><td>FK</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: Orden</h3>
+        <p>Registro de todas las órdenes hechas por los clientes. Conectada con la tabla Usuario y MetodoPago.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>OrdenID</td><td>Identificador único de la orden.</td><td>PK</td></tr>
+                <tr><td>UsuarioID</td><td>Usuario que realizó la orden.</td><td>FK</td></tr>
+                <tr><td>FechaOrden</td><td>Fecha en que se registró la orden.</td><td></td></tr>
+                <tr><td>Total</td><td>Monto total de la orden.</td><td></td></tr>
+                <tr><td>Estado</td><td>Estado actual de la orden (ej: "Entregada", "En proceso").</td><td></td></tr>
+                <tr><td>DireccionEntrega</td><td>Dirección de entrega de la orden.</td><td></td></tr>
+                <tr><td>MetodoPagoID</td><td>Método de pago utilizado para la orden.</td><td>FK</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: DetalleOrden</h3>
+        <p>Se registran los detalles de la orden. Conectada con la tabla Orden y Producto.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>DetalleID</td><td>Identificador único del detalle de la orden.</td><td>PK</td></tr>
+                <tr><td>OrdenID</td><td>Orden a la que pertenece el detalle.</td><td>FK</td></tr>
+                <tr><td>ProductoID</td><td>Producto comprado.</td><td>FK</td></tr>
+                <tr><td>Cantidad</td><td>Cantidad del producto comprado.</td><td></td></tr>
+                <tr><td>PrecioUnitario</td><td>Precio unitario del producto en el momento de la compra.</td><td></td></tr>
+                <tr><td>DescuentoAplicado</td><td>Monto del descuento aplicado.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="table-documentation">
+        <h3>Tabla: Pago</h3>
+        <p>Registro de los pagos. Conectado con las tablas Orden y MetodoPago.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>PagoID</td><td>Identificador único del pago.</td><td>PK</td></tr>
+                <tr><td>OrdenID</td><td>Orden asociada al pago.</td><td>FK</td></tr>
+                <tr><td>MetodoPagoID</td><td>Método de pago utilizado.</td><td>FK</td></tr>
+                <tr><td>Monto</td><td>Monto total del pago.</td><td></td></tr>
+                <tr><td>FechaPago</td><td>Fecha en que se registró el pago.</td><td></td></tr>
+                <tr><td>EstadoPago</td><td>Estado actual del pago.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="table-documentation">
+        <h3>Tabla: DireccionEntrega</h3>
+        <p>Registro de las direcciones de los usuarios para las entregas. Conectado con la tabla Usuario.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>DireccionEntregaID</td><td>Identificador único de la dirección.</td><td>PK</td></tr>
+                <tr><td>UsuarioID</td><td>Usuario al que pertenece la dirección.</td><td>FK</td></tr>
+                <tr><td>Calle</td><td>Nombre de la calle.</td><td></td></tr>
+                <tr><td>numero</td><td>Número de la casa/departamento.</td><td></td></tr>
+                <tr><td>Ciudad</td><td>Ciudad de la entrega.</td><td></td></tr>
+                <tr><td>Provincia</td><td>Provincia de la entrega.</td><td></td></tr>
+                <tr><td>Pais</td><td>País de la entrega.</td><td></td></tr>
+                <tr><td>CodigoPostal</td><td>Código postal.</td><td></td></tr>
+                <tr><td>Indicaciones</td><td>Indicaciones adicionales para la entrega.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: CarritoCompra</h3>
+        <p>Registro de los carritos del usuario. Conectado con la tabla Usuario.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>CarritoID</td><td>Identificador único del carrito.</td><td>PK</td></tr>
+                <tr><td>UsuarioID</td><td>Usuario propietario del carrito.</td><td>FK</td></tr>
+                <tr><td>FechaCreacion</td><td>Fecha de creación del carrito.</td><td></td></tr>
+                <tr><td>Estado</td><td>Estado del carrito (ej: "Activo", "Comprado").</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: CarritoDetalle</h3>
+        <p>Registro de los detalles que contiene el CarritoCompra. Conectado con las tablas CarritoCompra y Producto.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>CarritoDetalleID</td><td>Identificador único del detalle.</td><td>PK</td></tr>
+                <tr><td>CarritoID</td><td>Carrito al que pertenece el detalle.</td><td>FK</td></tr>
+                <tr><td>ProductoID</td><td>Producto en el carrito.</td><td>FK</td></tr>
+                <tr><td>Cantidad</td><td>Cantidad del producto.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="table-documentation">
+        <h3>Tabla: ReseñaProducto</h3>
+        <p>Registro de las reseñas que dejan los clientes de los productos. Conectado con las tablas Usuario y Producto.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>ReseñaID</td><td>Identificador único de la reseña.</td><td>PK</td></tr>
+                <tr><td>UsuarioID</td><td>Usuario que realizó la reseña.</td><td>FK</td></tr>
+                <tr><td>ProductoID</td><td>Producto reseñado.</td><td>FK</td></tr>
+                <tr><td>Calificacion</td><td>Puntuación de la reseña.</td><td></td></tr>
+                <tr><td>Comentario</td><td>Comentario del usuario.</td><td></td></tr>
+                <tr><td>FechaReseña</td><td>Fecha en que se registró la reseña.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="table-documentation">
+        <h3>Tabla: InventarioMovimiento</h3>
+        <p>Registro del movimiento de los productos del inventario. Conectado con la tabla Producto.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>MovimientoID</td><td>Identificador único del movimiento.</td><td>PK</td></tr>
+                <tr><td>ProductoID</td><td>Producto afectado por el movimiento.</td><td>FK</td></tr>
+                <tr><td>Fecha</td><td>Fecha del movimiento.</td><td></td></tr>
+                <tr><td>TipoMovimiento</td><td>Tipo de movimiento (ej: "Entrada", "Salida").</td><td></td></tr>
+                <tr><td>Cantidad</td><td>Cantidad de unidades movidas.</td><td></td></tr>
+                <tr><td>Motivo</td><td>Motivo del movimiento.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: VisitaWeb</h3>
+        <p>Registro de los reportes web, tanto de visitas como de navegabilidad.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>VisitaID</td><td>Identificador único de la visita.</td><td>PK</td></tr>
+                <tr><td>Fecha</td><td>Fecha de la visita.</td><td></td></tr>
+                <tr><td>UsuarioID</td><td>Usuario registrado que realizó la visita (puede ser NULL si no está logueado).</td><td>FK</td></tr>
+                <tr><td>FuenteTrafico</td><td>Fuente de donde provino el tráfico (ej: "Google", "Directo").</td><td></td></tr>
+                <tr><td>Medio</td><td>Medio de la fuente (ej: "cpc", "organic").</td><td></td></tr>
+                <tr><td>Campaña</td><td>Nombre de la campaña de marketing.</td><td></td></tr>
+                <tr><td>Dispositivo</td><td>Dispositivo usado (ej: "Escritorio", "Móvil").</td><td></td></tr>
+                <tr><td>Sesiones</td><td>Número de sesiones.</td><td></td></tr>
+                <tr><td>PaginasVistas</td><td>Número de páginas vistas.</td><td></td></tr>
+                <tr><td>TiempoEnSitio</td><td>Tiempo total en el sitio (en segundos).</td><td></td></tr>
+                <tr><td>EventoConversion</td><td>Evento de conversión activado.</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-documentation">
+        <h3>Tabla: MetodoPago</h3>
+        <p>Registro de los métodos de pagos que tiene la tienda.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Columna</th>
+                    <th>Descripción</th>
+                    <th>Tipo/Clave</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>MetodoID</td><td>Identificador único del método de pago.</td><td>PK</td></tr>
+                <tr><td>Nombre</td><td>Nombre del método de pago (ej: "Tarjeta de Crédito", "PayPal").</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+    <section class="next-page-section">
+         <!-- <h2>¿Listo para la Proyección de Usuarios?</h2>
+        <p>Haz clic para explorar los escenarios de crecimiento y las estrategias recomendadas.</p> -->
+        <a href="proyeccion.html" class="next-page-button">Ir a la Proyección</a>
+    </section>
+
+    <footer>
+        <p>&copy; Noviembre 2025 Presentación de Análisis de Datos</p>
+    </footer>
+
+</body>
+</html>
