@@ -34,7 +34,7 @@
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 0.95em;
+    font-size: 0.70em;
     padding: 5px 0;
     transition: color 0.3s ease;
 }
@@ -312,4 +312,5 @@ body {
 /* Ocultamos el estilo de imagen anterior, ya no se usa */
 .diagram-image {
     display: none; 
+
 }
